@@ -9,4 +9,5 @@ Practicing Assembly Language: From ARM to RISC-V
 
 ## Topics Covered:
 -> [Addressing Modes](https://github.com/skaustubh04/assembly-practice/tree/main/addressingModes "Link to repo") - Direct, Reg. Indirect, Pre- & Post-Increment <br>
+-> [Arithmetic Operations](https://github.com/skaustubh04/assembly-practice/tree/main/arithmetic "Link to repo") - Addition & Subtraction: with & without CPSR
 
