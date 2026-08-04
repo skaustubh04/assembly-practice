@@ -8,6 +8,10 @@ Practicing Assembly Language: From ARM to RISC-V
 - [CPULator (Website)](https://cpulator.01xz.net/ "simulate multiple assembly types") - for simulation (temporary usage, for ARMv7) <br>
 
 ## Topics Covered:
--> [Addressing Modes](https://github.com/skaustubh04/assembly-practice/tree/main/addressingModes "Link to repo") - Direct, Reg. Indirect, Pre- & Post-Increment <br>
--> [Arithmetic Operations](https://github.com/skaustubh04/assembly-practice/tree/main/arithmetic "Link to repo") - Addition & Subtraction: with & without CPSR <br>
--> [Branching](https://github.com/skaustubh04/assembly-practice/tree/main/branching "Link to repo") - Branching operations: BEQ, BNE, BGT, BGE, BLT, BLE <br>
+### ARM:
+-> [Addressing Modes](https://github.com/skaustubh04/assembly-practice/tree/main/addressingModes "Link to dir") - Direct, Reg. Indirect, Pre- & Post-Increment <br>
+-> [Arithmetic Operations](https://github.com/skaustubh04/assembly-practice/tree/main/arithmetic "Link to dir") - Addition & Subtraction: with & without CPSR <br>
+-> [Branching](https://github.com/skaustubh04/assembly-practice/tree/main/branching "Link to dir") - Branching operations: BEQ, BNE, BGT, BGE, BLT, BLE <br>
+
+### RISC-V:
+-> [Registers (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/registers "Link to dir") - Different types of registers in RISC-V <br>

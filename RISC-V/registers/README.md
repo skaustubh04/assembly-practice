@@ -3,7 +3,7 @@
         RV32 -> 32-bit (4-byte) registers 
         RV64 -> 64-bit (8-byte) registers  
 
- - The **32 general-purpose registers** available in RISC-V are as follows, along with their alternate names (which are preferred to be used), and their explanation: 
+ - The **32 general-purpose registers** available in RISC-V are as follows, along with their alternate names (which are preferred to be used), and their explanation: <br>
         ![Register Alt Names](risc-v_register_alt_names.jpg) 
 
 ## Dedicated Registers
