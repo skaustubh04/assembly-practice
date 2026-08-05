@@ -15,3 +15,4 @@ Practicing Assembly Language: From ARM to RISC-V
 
 ### RISC-V:
 -> [Registers (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/registers "Link to dir") - Different types of registers in RISC-V <br>
+-> [Instructions (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/instructions "Link to dir") - Most of the instructions in RISC-V (RV32I) <br>
