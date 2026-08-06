@@ -43,7 +43,7 @@ The address, in-case branching to a label, is PC relative. It is calculated inte
  ecall 
  ```
  - Some common system calls:
-    - | System Call | a0 | a7 |
+      | System Call | a0 | a7 |
       |:-----------:|:--:|:--:|
       | PrintInt | Integer to Print | 1 |
       | PrintString | Address of null-terminated string | 4 |
@@ -52,33 +52,32 @@ The address, in-case branching to a label, is PC relative. It is calculated inte
       | Exit | N/A, exits the program with code 0 | 10 |
  - An alternate way to write the "Printing 'a' to screen program":
  ```
- # Print the character 'a' to console.
+ # Print the character 'a' to console
  li    a0, 97    # Alternative to addi a0, zero, 97
  li    a7, 11    # PrintChar system call
  ecall           # makes the system call
  ```
  - Some more examples:
  ```
- # Print the integer 12500.
+ # Print the integer 12500
  li    a0, 12500
  li    a7, 1
  ecall
  ```
  ```
  .data
- # String to print later. Strings that you print must be null-terminated.
+ # String to print later. Strings that you print must be null-terminated
  cool_str:
-     .asciz "The quick brown fox jumps over the lazy dog. Again, he never really tires of it."
+     .asciz "I use Arch, btw."
  
  .text
- # Print the string in the data section.
- la    a0, cool_str    # Loads the address of a label.
+ # Print the string in the data section
+ la    a0, cool_str    # Loads the address of a label
  li    a7, 4
  ecall
  ```
  ```
- # Print the string in the data section.
- la    a0, cool_str    # Loads the address of a label.
- li    a7, 4
- ecall
+ # Exit the program
+ li    a7, 10    # Exit (system call code)
+ ecall 
  ```
