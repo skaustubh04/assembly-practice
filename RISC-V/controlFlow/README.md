@@ -13,16 +13,12 @@ The address, in-case branching to a label, is PC relative. It is calculated inte
 ### Basic Usage
  - The following are the mandatorily included commands for branching:
  ```
- 1.  beq  rs1, rs2, imm12    # if (rs1==rs2) goto MEM[PC+imm12]
- 2.  bne  rs1, rs2, imm12    # if (rs1!=rs2) goto MEM[PC+imm12]
- 3.  blt  rs1, rs2, imm12    # if (rs1<rs2)  goto MEM[PC+imm12]
- 4.  ble  rs1, rs2, imm12    # if (rs1<=rs2) goto MEM[PC+imm12]
- 5.  bgt  rs1, rs2, imm12    # if (rs1>rs2)  goto MEM[PC+imm12]
- 6.  bge  rs1, rs2, imm12    # if (rs1>=rs2) goto MEM[PC+imm12]
- 7.  bltu rs1, rs2, imm12    # if (rs1<rs2)  goto MEM[PC+imm12] (unsigned)
- 8.  bleu rs1, rs2, imm12    # if (rs1<=rs2) goto MEM[PC+imm12] (unsigned)
- 9.  bgtu rs1, rs2, imm12    # if (rs1>rs2)  goto MEM[PC+imm12] (unsigned)
- 10. bgeu rs1, rs2, imm12    # if (rs1>=rs2) goto MEM[PC+imm12] (unsigned)
+ 1. beq  rs1, rs2, imm12    # if (rs1==rs2) goto MEM[PC+imm12]
+ 2. bne  rs1, rs2, imm12    # if (rs1!=rs2) goto MEM[PC+imm12]
+ 3. blt  rs1, rs2, imm12    # if (rs1<rs2)  goto MEM[PC+imm12]
+ 4. bge  rs1, rs2, imm12    # if (rs1>=rs2) goto MEM[PC+imm12]
+ 5. bltu rs1, rs2, imm12    # if (rs1<rs2)  goto MEM[PC+imm12] (unsigned)
+ 6. bgeu rs1, rs2, imm12    # if (rs1>=rs2) goto MEM[PC+imm12] (unsigned)
  ```
 
 ### System Calls
