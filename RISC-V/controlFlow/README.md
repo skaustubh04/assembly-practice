@@ -91,22 +91,22 @@ The address, in-case branching to a label, is PC relative. It is calculated inte
  ```
 
  - Uses of `jal` instruction:
-   - **CALL**: `jal ra,   address`
-   - **JUMP**: `jal zero, address`
+   - CALL: `jal ra,   address`
+   - JUMP: `jal zero, address`
 
  - Uses of `jalr` instruction:
-   - **Indirect CALL**:   `jalr ra,   imm12(rs1)    # The address isn't known, but instead computed`
-   - **Indirect JUMP**:   `jalr zero, imm12(rs1)`
-   - **Indirect RETURN**: `jalr zero, imm12(ra)`
+   - Indirect CALL:   `jalr ra,   imm12(rs1)    # The address isn't known, but instead computed`
+   - Indirect JUMP:   `jalr zero, imm12(rs1)`
+   - Indirect RETURN: `jalr zero, imm12(ra)`
 
  - Uses of `lui` instruction:
-   - **Long JUMPs**:
+   - Long JUMPs:
      `jal` itself won't work when target address requires 32 bits. Instead, 2 instructions are used.
      ```assembly
      lui  t0,   upper20        # t0 = upper20 << 12
      jalr zero, lower12(t0)    # no return address; PC = t0 + lower12
      ```
-   - **Long CALLs**:
+   - Long CALLs:
      ```assembly
      lui  t0, upper20        # t0 = upper20 << 12
      jalr ra, lower12(t0)    # ra = return address; PC = t0 + lower12
@@ -115,13 +115,13 @@ The address, in-case branching to a label, is PC relative. It is calculated inte
  - Uses of `auipc` instruction:
    - Difference between `lui` and `auipc` is that `auipc` is PC-relative: `rd = PC + offset`.
    - It works well when the difference between 2 desired addresses is known.
-   - **Long JUMPs (PC-relative)**:
-   ```assembly
-   auipc t0,   upper20        # t0 = PC + (upper20 << 12)
-   jalr  zero, lower12(t0)    # no return address; PC = t0 + lower12
-   ```
-   - **Long CALLs (PC-relative)**:
-   ```assembly
-   auipc t0, upper20        # t0 = PC + (upper20 << 12)
-   jalr  ra, lower12(t0)    # ra = return address; PC = t0 + lower12
-   ```
+   - Long JUMPs (PC-relative):
+     ```assembly
+     auipc t0,   upper20        # t0 = PC + (upper20 << 12)
+     jalr  zero, lower12(t0)    # no return address; PC = t0 + lower12
+     ```
+   - Long CALLs (PC-relative):
+     ```assembly
+     auipc t0, upper20        # t0 = PC + (upper20 << 12)
+     jalr  ra, lower12(t0)    # ra = return address; PC = t0 + lower12
+     ```
