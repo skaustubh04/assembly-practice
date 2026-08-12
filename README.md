@@ -18,3 +18,4 @@ Practicing Assembly Language: From ARM to RISC-V
  - [Instructions (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/instructions "Link to dir") - Most of the instructions in RISC-V (RV32I) <br>
  - [Branching (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/controlFlow "Link to dir") - Branching Instructions in RISC-V <br>
  - [Extensions (Theory)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/extensions "Link to dir") - Multiply & Divide Extensions in RISC-V <br>
+ - [Factorial (Program)](https://github.com/skaustubh04/assembly-practice/tree/main/RISC-V/exampleProgram "Link to dir") - RISC-V Assembly program for performing factorial <br>
